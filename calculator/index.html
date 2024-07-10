@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CALCULATOR</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <h1>CALCULATOR</h1>
+
+    <div class="container">
+        <form action="">
+            <p>CASIO</p>
+            <div class="screen-container">
+                <span id="time" class="time"></span>
+                <input type="text" id="screen" readonly>
+            </div>
+            <br>
+
+            <input class="button number" type="button"value="7" onclick="btnClick(value)">
+            <input class="button number" type="button"value="8" onclick="btnClick(value)">
+            <input class="button number" type="button"value="9" onclick="btnClick(value)">
+            <input class="button operator" type="button"value="/" onclick="btnClick(value)">
+            <br>
+
+            <input class="button number" type="button"value="4" onclick="btnClick(value)">
+            <input class="button number" type="button"value="5" onclick="btnClick(value)">
+            <input class="button number" type="button"value="6" onclick="btnClick(value)">
+            <input class="button operator" type="button"value="*" onclick="btnClick(value)">
+
+            <br>
+
+            <input class="button number" type="button"value="1" onclick="btnClick(value)">
+            <input class="button number" type="button"value="2" onclick="btnClick(value)">
+            <input class="button number" type="button"value="3" onclick="btnClick(value)">
+            <input class="button operator" type="button"value="+" onclick="btnClick(value)">
+
+            <br>
+
+            <input class="button clear" type="button"value="AC" onclick="clearScreen()">
+            <input class="button number" type="button"value="0" onclick="btnClick(value)">
+            <input class="button result" type="button"value="=" onclick="calculate()">
+            <input class="button operator" type="button"value="-" onclick="btnClick(value)">
+
+        </form>
+    </div>
+
+    <script src="./calc.js"></script>
+    <script src="./time.js"></script>
+</body>
+</html>
